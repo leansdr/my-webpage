@@ -14,6 +14,14 @@
   --border-color:#999;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#projects-section-title:target {
+  scroll-margin-top: .8em;
+}
+
 #container {
   display: flex;
   flex-direction: row;
