@@ -120,6 +120,8 @@ html {
   max-width: 75%;
   margin-bottom: 10px;
   text-align: justify;
+  line-height: 25px;
+  font-size: 20px;
 }
 
 #btn-projects {
@@ -217,6 +219,13 @@ html {
   font-size: 18px;
   text-align: justify;
 }
+
+.project-box .project-description a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+
 
 @media (min-width:320px) and (max-width:425px) {
    #container {
