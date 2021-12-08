@@ -126,8 +126,8 @@ html {
 
 #developments {
   display: flex;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: space-around;
+  width: 70%;
 }
 
 #btn-projects {
