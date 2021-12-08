@@ -238,6 +238,16 @@ html {
      flex-direction: column;
    }
 
+   #developments{
+     width: 100%;
+     flex-direction: column;
+   }
+
+   #btn-projects {
+     width: 100%;
+     justify-content: center; 
+   }
+
    #skills-container,
    #projects-container {
      flex-direction: column;
