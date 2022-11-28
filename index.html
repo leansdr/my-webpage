@@ -16,6 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/script.js" defer></script>
@@ -65,13 +68,19 @@
         </p>
         <p class="description"></p>
         <section id="developments">
-          <a href="#projects-section-title" id="btn-projects">
+          <a
+            href="#projects-section-title"
+            id="btn-projects"
+            data-aos="fade-left"
+          >
             <ion-icon name="share-social-outline"></ion-icon
             ><span>Ver Projetos</span>
           </a>
           <a
             href="assets/download/Curriculo_Leandro_S_Reis.pdf"
             id="btn-projects"
+            data-aos="fade-left"
+            data-aos-delay="50"
           >
             <ion-icon name="document"></ion-icon><span>Ver Currículo</span>
           </a>
@@ -79,20 +88,17 @@
         <h2 id="skills-section-title">Minhas Skills</h2>
         <p class="description mobile">As tecnologias que conheço:</p>
         <div id="skills-container">
-          <div class="skills-box">
-            <p class="skills-title">Front-end</p>
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <i class="devicon-css3-plain-wordmark colored"></i>
+          <div data-aos="fade-up" class="skills-box">
+            <i class="devicon-html5-plain colored"></i>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="50" class="skills-box">
+            <i class="devicon-css3-plain colored"></i>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="150" class="skills-box">
             <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" class="skills-box">
             <i class="devicon-sass-original colored"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Databases</p>
-            <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Ferramentas</p>
-            <i class="devicon-git-plain colored"></i>
           </div>
         </div>
         <h2 id="projects-section-title">Meus Projetos</h2>
@@ -100,90 +106,114 @@
           Projetos desenvolvidos para aprendizado.
         </p>
         <div id="projects-container">
-          <div class="project-box">
-            <img src="assets/img/desktop-preview.jpg" alt="" />
-            <div class="project-description">
-              <p>
+          <div class="card" data-aos="fade-left">
+            <div class="card-body">
+              <h4 class="card-title">Sunny Side</h4>
+              <p class="card-text">
                 Projeto desenvolvido pelo desafio do site Front-Mentor. Aplicado
                 habilidades de Flexbox e CSS Grid. Desenvolvido apenas com HTML
                 e CSS.
               </p>
             </div>
-            <a
-              href="https://kind-volhard-80578e.netlify.app"
-              id="btn-projects"
-              target="_blank"
-            >
-              <ion-icon name="share-social-outline"></ion-icon
-              ><span>Ver Projeto</span>
-            </a>
+            <div class="card-footer">
+              <div class="card-nivel">
+                <a
+                  href="https://kind-volhard-80578e.netlify.app/"
+                  target="_blank"
+                  id="btn-project"
+                  data-aos="fade-left"
+                >
+                  <ion-icon name="share-social-outline"></ion-icon
+                  ><span>Ver Projeto</span>
+                </a>
+              </div>
+              <div class="card-footer-img">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+              </div>
+            </div>
           </div>
-          <div class="project-box">
-            <a href="https://leansdr.github.io/projeto-marvel/" target="_blank"
-              ><img src="assets/img/marvel.PNG" alt=""
-            /></a>
-            <div class="project-description">
-              <p>
+          <div class="card" data-aos="fade-left" data-aos-delay="50">
+            <div class="card-body">
+              <h4 class="card-title">Projeto Marvel</h4>
+              <p class="card-text">
                 Projeto desenvolvido durante a semana MapaDev Week do canal Dev
                 em Dobro. Desenvolvido com HTML 5, CSS 3 e Javascript.
               </p>
             </div>
-            <a
-              href="https://leansdr.github.io/projeto-marvel/"
-              id="btn-projects"
-              class="btn-projects-center"
-              target="_blank"
-            >
-              <ion-icon name="share-social-outline"></ion-icon
-              ><span>Ver Projeto</span>
-            </a>
+            <div class="card-footer">
+              <div class="card-nivel">
+                <a
+                  href="https://leansdr.github.io/projeto-marvel/"
+                  target="_blank"
+                  id="btn-project"
+                  data-aos="fade-left"
+                >
+                  <ion-icon name="share-social-outline"></ion-icon
+                  ><span>Ver Projeto</span>
+                </a>
+              </div>
+              <div class="card-footer-img">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+            </div>
           </div>
-          <div class="project-box">
-            <a
-              href="https://hcode-lab-ifood.github.io/store.html"
-              target="_blank"
-              ><img src="assets/img/ifood.png" alt=""
-            /></a>
-            <div class="project-description">
-              <p>
+          <div class="card" data-aos="fade-left">
+            <div class="card-body">
+              <h4 class="card-title">Loja McDonald's do Ifood</h4>
+              <p class="card-text">
                 Projeto clone do Ifood desenvolvido durante o módulo Web Starter
                 do Hcode Lab (Hcode Treinamentos). O projeto foi realizado em
                 grupo e fui responsável por desenvolver a página da loja do
-                McDonald's.
-                <a href="https://hcode-lab-ifood.github.io/" target="_blank"
-                  >Link do projeto completo</a
+                McDonald's. Link do projeto completo
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="card-nivel">
+                <a
+                  href="https://hcode-lab-ifood.github.io/store.html"
+                  target="_blank"
+                  id="btn-project"
+                  data-aos="fade-left"
                 >
-              </p>
+                  <ion-icon name="share-social-outline"></ion-icon
+                  ><span>Ver Projeto</span>
+                </a>
+              </div>
+              <div class="card-footer-img">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-sass-original colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
             </div>
-            <a
-              href="https://hcode-lab-ifood.github.io/store.html"
-              id="btn-projects"
-              target="_blank"
-              class="btn-projects-center"
-            >
-              <ion-icon name="share-social-outline"></ion-icon
-              ><span>Ver Projeto</span>
-            </a>
           </div>
-          <div class="project-box">
-            <a href="https://leansdr.github.io/projeto-pokemon/" target="_blank"
-              ><img src="assets/img/pokemon.JPG" alt=""
-            /></a>
-            <div class="project-description">
-              <p>
-                Projeto de uma pokedex que carrega alguns pokemons(em
-                construção)
+          <div class="card" data-aos="fade-left">
+            <div class="card-body">
+              <h4 class="card-title">Nice Page</h4>
+              <p class="card-text">
+                Projeto desenvolvido de um layout da Nicepage
               </p>
             </div>
-            <a
-              href="https://leansdr.github.io/projeto-pokemon/"
-              id="btn-projects"
-              target="_blank"
-              class="btn-projects-center"
-            >
-              <ion-icon name="share-social-outline"></ion-icon
-              ><span>Ver Projeto</span>
-            </a>
+            <div class="card-footer">
+              <div class="card-nivel">
+                <a
+                  href="https://sunny-flan-af0d6f.netlify.app/"
+                  target="_blank"
+                  id="btn-project"
+                  data-aos="fade-left"
+                >
+                  <ion-icon name="share-social-outline"></ion-icon
+                  ><span>Ver Projeto</span>
+                </a>
+              </div>
+              <div class="card-footer-img">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-sass-original colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -196,5 +226,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
