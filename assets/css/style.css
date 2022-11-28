@@ -189,8 +189,7 @@ html {
 }
 
 .skills-box {
-  flex: 1 1 33%;
-  max-width: 15%;
+  flex: 1 1 15%;
   height: auto;
   background-color: #141518;
   display: flex;
@@ -198,6 +197,7 @@ html {
   align-items: center;
   padding: 20px;
   border-radius: 0.3rem;
+  border: 1px solid #fff;
 }
 
 .skills-box i {
@@ -211,6 +211,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid #fff;
 }
 
 .card-body {
