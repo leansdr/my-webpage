@@ -221,7 +221,7 @@ html {
 .card-title {
   color: #fff;
   margin-bottom: 0.8rem;
-  border-bottom: 1px solid  #ccc ;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 1rem;
 }
 
@@ -249,15 +249,16 @@ html {
   #container {
     flex-direction: column;
     overflow: hidden;
+    padding-bottom: 20px;
   }
 
-  #bio-container{
+  #bio-container {
     position: initial;
     width: 100%;
     border-right: 0;
   }
 
-  #about-container{
+  #about-container {
     margin-left: 0;
   }
 
