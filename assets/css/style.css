@@ -189,19 +189,24 @@ html {
 }
 
 .skills-box {
-  flex: 1 1 15%;
-  height: auto;
-  background-color: #141518;
+  flex: 1 1 25%;
+  height: 120px;
+  background-color: #1d1d1d;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   border-radius: 0.3rem;
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
 }
 
 .skills-box i {
   font-size: 60px;
+  margin-right: 10px;
+}
+
+.skills-box-title {
+  margin-bottom: 10px;
 }
 
 .card {
