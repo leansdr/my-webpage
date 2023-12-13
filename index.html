@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
     />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,12 +30,18 @@
     <title>Portfólio Leandro Reis</title>
   </head>
 
-  <body>
+  <body id="body">
     <main id="container">
       <aside id="bio-container">
         <h2></h2>
         <img id="bio-image" src="assets/img/foto.jpg" alt="Foto" />
-        <p></p>
+        <div id="container-toogle">
+          <i class="bi bi-brightness-high"></i>
+          <div id="button-toogle">
+            <span id="circle"></span>
+          </div>
+          <i class="bi bi-moon"></i>
+        </div>
         <p id="welcome-text">Seja bem-vindo</p>
         <ul id="social-container">
           <li>
@@ -76,16 +87,15 @@
             <ion-icon name="share-social-outline"></ion-icon
             ><span>Ver Projetos</span>
           </a>
-          <!--
           <a
-            href="assets/download/Curriculo_Leandro_S_Reis.pdf"
+            href="assets/download/Curriculo_Leandro_Reis_Online.pdf"
             id="btn-projects"
+            target="_blank"
             data-aos="fade-left"
             data-aos-delay="50"
           >
             <ion-icon name="document"></ion-icon><span>Ver Currículo</span>
           </a>
-          -->
         </section>
         <h2 id="skills-section-title">Minhas Skills</h2>
         <p class="description mobile">As tecnologias que conheço:</p>
