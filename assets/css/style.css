@@ -339,6 +339,20 @@ i {
   color: #fff;
 }
 
+#to-home {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+}
+
+#to-home i {
+  font-size: 40px;
+  color: rgb(21, 197, 21);
+  position: fixed;
+  bottom: 8px;
+}
+
 @media (min-width: 320px) and (max-width: 425px) {
   #container {
     flex-direction: column;
