@@ -293,7 +293,6 @@ html {
   border-radius: 50px;
   display: flex;
   align-items: center;
-  cursor: pointer;
   margin: 0 10px;
   padding: 2px;
   transition: all 0.4s;
@@ -305,12 +304,13 @@ html {
   width: 20px;
   height: 18px;
   background-color: #3085f5;
-  display: flex;
+  transition: all 0.4s;
+  cursor: pointer;
 }
 
 .on {
-  display: flex;
-  justify-content: flex-end;
+  transition: all 0.4s;
+  transform: translateX(25px);
 }
 
 .dark {
@@ -321,10 +321,6 @@ html {
 
 .white-title {
   color: #fff;
-}
-
-.border-button {
-  background-color: #61dafb !important;
 }
 
 i {
